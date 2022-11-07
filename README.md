@@ -9,7 +9,7 @@ Add below line in your local_manifest
 ```
 Add below line to device.mk
 ```
-# Inherit ANXCamera
+# Inherit Viper4FX 
 $(call inherit-product, packages/apps/Viper4FX/config.mk)
 
 
