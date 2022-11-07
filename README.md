@@ -1,7 +1,16 @@
 # packages_apps_Viper4FX
 
-Just add below line in your device.mk file
+Add below line in your local_manifest
 ```
-PRODUCT_PACKAGES += \
-    Viper4FX 
+  <remote name="me"
+          fetch="https://github.com/Arafattex"
+          revision="13"/>
+  <project path="packages/apps/Viper4FX" name="packages_apps_Viper4FX" remote="me" revision="13"/>
+```
+Add below line to device.mk
+```
+# Inherit ANXCamera
+$(call inherit-product, packages/apps/Viper4FX/config.mk)
+
+
 ```
